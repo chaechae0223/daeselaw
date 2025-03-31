@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>법무법인 대세 소식</title>
+
+    <!-- 폰트어썸 연결 -->
+    <script src="https://kit.fontawesome.com/0b53e6bf8f.js" crossorigin="anonymous"></script>
+
+    <!-- 외부스타일시트 -->
+    <link rel="stylesheet" href="style3.css">
+
+    <!-- 제이쿼리 CDN -->
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+
+    <script src="js3.js"></script>
+
+    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+    
+</head>
+<body>
+    <!-- nav 설정 -->
+    <div class="nav">
+      <aside class="sidebar">
+        <div class="login">
+          <a href="#"><img src="img/people.png" alt=""><span>로그인</span></a>
+        </div>
+      
+        <nav>
+          <ul>
+            <li class="has-sub">
+              <a href="#"><span>대세소개</span></a>
+              <ul class="submenu">
+                <li><a href="index1.html">인사말</a></li>
+                <li><a href="index2.html">연혁</a></li>
+                <li><a href="index3.html">소식</a></li>
+                <li><a href="index4.html">오시는길</a></li>
+              </ul>
+            </li>
+            <li class="has-sub">
+              <a href="#"><span>전문가소개</span></a>
+              <ul class="submenu">
+                <li><a href="#">전문가소개</a></li>
+                <li><a href="#">변호사 인터뷰</a></li>
+              </ul>
+            </li>
+            <li><a href="#"><span>업무분야</span></a></li>
+            <li><a href="#"><span>성공사례</span></a></li>
+            <li><a href="#"><span>고객후기</span></a></li>
+            <li><a href="#"><span>상담신청</span></a></li>
+          </ul>
+        </nav>
+      
+        <div class="consult-info">
+          <p class="tel-info">24시 전화상담<br><strong>1660-3868</strong></p>
+      
+          <form class="consult-form">
+            <select>
+              <option>[필수] 상담분야</option>
+              <option>형사·성범죄</option>
+              <option>이혼·상간자</option>
+              <option>행정·소청</option>
+              <option>회생·파산</option>
+            </select>
+            <input type="text" name="name" placeholder="이름" required />
+            <input type="tel" name="phone" pattern="[0-9]{10,11}" placeholder="전화번호" required />
+            <label><input type="checkbox" /> 개인정보 수집 및 이용약관 동의</label>
+            <button type="submit">상담신청</button>
+          </form>
+        </div>
+      
+        <div class="consult-icons">
+          <a href="#"><img src="img/visit.png" alt="방문상담" /></a>
+          <a href="#"><img src="img/chatting.png" alt="채팅상담" /></a>
+          <a href="#"><img src="img/call.png" alt="전화상담" /></a>
+        </div>
+      
+        <a href="#" class="blog-btn">공식블로그 바로가기</a>
+        <a href="#" class="legal-btn">면책공고</a>
+      </aside>
+    </div>
+
+     <!-- wrap 시작 -->
+
+     <div class="wrap">
+  
+            <div class="main">
+                <div class="logo"><a href="index.html"><img src="img/logo.png" alt="로고"></a></div>
+                <div class="txt"><h1>소 식</h1></div>
+              </div>
+
+
+     <!-- 내용 -->
+     <!-- 소식 콘텐츠 시작 -->
+<section class="news-section">
+    <div class="news-tabs">
+      <button class="tab active" data-tab="notice">공지사항</button>
+      <button class="tab" data-tab="media">미디어</button>
+    </div>
+  
+    <div class="news-content">
+      <!-- 공지사항 탭 -->
+      <div class="tab-content active" id="notice">
+        <ul class="news-list">
+          <li>
+            <a href="">
+                <span class="title">법무법인 대세는 허위/과장 광고를 하지 않습니다.</span>
+                <span class="date">2024-04-12</span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+                <span class="title">법무법인 대세 홈페이지가 새롭게 태어났습니다.</span>
+                <span class="date">2023-10-18</span>
+            </a>
+          </li>
+        </ul>
+
+        <div class="pagination">
+            <button class="prev">〈</button>
+            <button class="page active">1</button>
+            <button class="page">2</button>
+            <button class="page">3</button>
+            <button class="page">4</button>
+            <button class="page">5</button>
+            <button class="next">〉</button>
+          </div>
+
+
+      </div>
+  
+      <!-- 미디어 탭 -->
+      <div class="tab-content" id="media">
+        <div class="media-grid">
+            <div class="media-card">
+                <a href="">
+                    <img src="img/media_card_1.png" alt="썸네일">
+                    <div class="text">
+                      <p class="title">법무법인 대세, ‘공무원 성실의무 위반’ 중징계 취소 ..</p>
+                      <p class="date">2025-01-24</p>
+                    </div>
+                </a>
+              </div>
+
+          <div class="media-card">
+            <a href="">
+                <img src="img/media_card_1.png" alt="썸네일">
+                <div class="text">
+                  <p class="title">법무법인 대세, ‘공무원 성실의무 위반’ 중징계 취소 ..</p>
+                  <p class="date">2025-01-24</p>
+                </div>
+            </a>
+          </div>
+
+
+          <div class="media-card">
+            <a href="">
+                <img src="img/media_card_1.png" alt="썸네일">
+                <div class="text">
+                  <p class="title">법무법인 대세, ‘공무원 성실의무 위반’ 중징계 취소 ..</p>
+                  <p class="date">2025-01-24</p>
+                </div>
+            </a>
+          </div>
+
+          <div class="media-card">
+            <a href="">
+                <img src="img/media_card_1.png" alt="썸네일">
+                <div class="text">
+                  <p class="title">법무법인 대세, ‘공무원 성실의무 위반’ 중징계 취소 ..</p>
+                  <p class="date">2025-01-24</p>
+                </div>
+            </a>
+          </div>
+
+          <div class="media-card">
+            <a href="">
+                <img src="img/media_card_1.png" alt="썸네일">
+                <div class="text">
+                  <p class="title">법무법인 대세, ‘공무원 성실의무 위반’ 중징계 취소 ..</p>
+                  <p class="date">2025-01-24</p>
+                </div>
+            </a>
+          </div>
+
+          
+
+        
+          <!-- 위 구조 반복 -->
+        </div>
+      
+        <div class="pagination">
+          <button class="prev">〈</button>
+          <button class="page active">1</button>
+          <button class="page">2</button>
+          <button class="page">3</button>
+          <button class="page">4</button>
+          <button class="page">5</button>
+          <button class="next">〉</button>
+        </div>
+      </div>
+
+
+    </div>
+  </section>
+
+
+     <!-- footer -->
+     <footer class="footer">
+        <div class="footer_tx">
+          <img src="img/footer_logo.png" alt="" class="footer_logo">
+          <ul>
+            <li><span>법무법인</span> 대세대표자 : 배철욱 / 광고책임변호사 : 박천사 / 사업자등록번호 : 803-87-01559
+            </li>
+            <li><span>서울지사</span> 서초구 서초중앙로 156, 블루원빌딩 415호 | 1660-3868
+            </li>
+            <li><span>대전지사</span> 서구 둔산중로 74 인곡타워 4층 | 1660-3868
+            </li>
+            <li><span>인천지사</span> 미추홀구 경원대로 890,102호 | 1800-5010</li>
+          </ul>
+          <p>&copy; 2025 법무법인 대세. 모든 권리 보유.</p>
+        </div>
+    </footer>
+     </div>
+    
+</body>
+</html>

@@ -1,0 +1,440 @@
+/* 언어설정 */
+@charset 'utf-8';
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
+
+/* 전체설정 */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Merriweather;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+img {
+    vertical-align: bottom;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+.body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* 색상설정 */
+:root {
+    --main-navi: #204B62;
+  }
+
+
+/* 상세설정 */
+
+/* nav 설정 */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+}
+
+/* sidebar 설정 */
+
+.sidebar {
+    width: 250px;
+    background-color: #204B62;
+    color: white;
+    height: 100vh;
+    position: fixed;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+    align-items: center;
+    z-index: 9999;
+}
+
+.sidebar .login {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.sidebar .login a {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar .login img {
+    width: 40px;
+    margin-right: 15px;
+}
+
+.sidebar .login span {
+    color: #fff;
+}
+
+.sidebar nav {}
+
+.sidebar nav ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+.sidebar nav ul li {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.sidebar nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    display: block;
+}
+
+.sidebar nav ul li a span {
+  font-weight: bold;
+}
+
+nav ul li .submenu {
+  display: none;
+  padding-left: 20px;
+  margin-top: 5px;
+}
+
+nav ul li.active .submenu {
+  display: block;
+}
+
+.sidebar .consult-info {
+    margin-top:20px;
+    text-align: center;
+    font-size: 14px;
+    color: white;
+    width: 100%;
+    padding: 0 10px;
+  }
+  
+  .sidebar .consult-info .date {
+    font-size: 20px;
+  }
+  
+  .sidebar .consult-info .time {
+    font-size: 33px;
+    font-weight: bold;
+    margin: 5px 0;
+  }
+  
+  .sidebar .consult-info .tel-info {
+    font-size: 20px;
+    line-height: 1.4;
+  }
+  
+  .sidebar .consult-form {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 0 10px;
+  }
+  
+  .sidebar .consult-form select,
+  .sidebar .consult-form input {
+    padding: 8px 0px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  
+  .sidebar .consult-form label {
+    font-size: 12px;
+    color: #ccc;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .sidebar .consult-form button {
+    padding: 8px;
+    background-color: #fff;
+    color: #204B62;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .sidebar .consult-icons {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+  
+  .sidebar .consult-icons img {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .sidebar .blog-btn,
+  .sidebar .legal-btn {
+    margin-top: 10px;
+    display: block;
+    background-color: #fff;
+    color: #204B62;
+    text-align: center;
+    padding: 8px 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  
+  /* wrap 설정 */
+.wrap {
+    display: block;
+}
+
+/* 인사말 설정 */
+.main {}
+
+.main .logo {
+    width: 100%;
+    height: 10%;
+}
+
+.main .logo img {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.main .txt {
+    background-image: url(img/news_bg.png);
+    background-size: cover;    
+    background-position: center top;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 400px; /* 또는 원하는 높이 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.main .txt h1 {
+    font-size: 50px;
+    margin-top: 50px;
+    font-weight: bold;
+    box-shadow: inset 0 -20px 0 rgba(255, 209, 211, 0.5);
+    display: inline-block;
+    color: #fff;
+}
+
+/* 내용 설정 */
+.news-section {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #F0F6F9;
+    border-radius: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  }
+  
+  .news-tabs {
+    display: flex;
+    border-bottom: 2px solid #ccc;
+    margin-bottom: 20px;
+  }
+  
+  .news-tabs .tab {
+    padding: 12px 24px;
+    cursor: pointer;
+    font-weight: bold;
+    border: none;
+    background: none;
+    border-bottom: 3px solid transparent;
+    font-size: 20px;
+    color: #333;
+  }
+  
+  .news-tabs .tab.active {
+    border-bottom: 3px solid #0076d7;
+    color: #0076d7;
+  }
+  
+  .news-content .tab-content {
+    display: none;
+  }
+  
+  .news-content .tab-content.active {
+    display: block;
+  }
+  
+  .news-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .news-list li {
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .news-list a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 18px;
+    text-decoration: none;
+    color: #222;
+  }
+  
+  .news-list .title {
+    text-align: left;
+    flex: 1;
+    font-weight: 500;
+  }
+  
+  .news-list .date {
+    text-align: right;
+    white-space: nowrap;
+    font-size: 14px;
+    color: #666;
+  }
+
+  /* 미디어 탭 */
+
+  /* 카드 그리드 */
+  .media-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 24px;
+    margin-top: 30px;
+  }
+  
+  .media-card {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+  }
+  
+  .media-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .media-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .media-card .text {
+    padding: 15px;
+  }
+  
+  .media-card .text .title {
+    font-size: 15px;
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 8px;
+    line-height: 1.4;
+  }
+  
+  .media-card .text .date {
+    font-size: 13px;
+    color: #888;
+  }
+  
+
+  /* 페이지네이션 */
+
+  .pagination {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .pagination button {
+    border: none;
+    background: none;
+    margin: 0 5px;
+    font-size: 16px;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    color: #333;
+  }
+  
+  .pagination button.active {
+    background-color: #0076d7;
+    color: white;
+  }
+  
+  .pagination button:hover {
+    background-color: #e4f0ff;
+  }
+
+
+
+
+/* footer 설정 */
+.footer {
+    width: 100%;
+    height:400px;
+    background-color: #204B62;
+  }
+  
+  .footer .footer_tx {}
+  
+  .footer .footer_tx .footer_logo {
+  margin-top: 50px;
+  margin-left: 50px;
+  }
+  
+  .footer .footer_tx ul {
+  margin-top: 30px;
+  margin-left: 50px;
+  }
+  
+  .footer .footer_tx ul li {
+  color: #fff;
+  margin-bottom: 10px;
+  }
+  
+  .footer .footer_tx ul li span {
+  font-weight: bold;
+  }
+  
+  .footer .footer_tx p {
+  margin-left: 50px;
+  color: #fff;
+  }

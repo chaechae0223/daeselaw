@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>법무법인 대세</title>
+
+    <!-- 폰트어썸 연결 -->
+    <script src="https://kit.fontawesome.com/0b53e6bf8f.js" crossorigin="anonymous"></script>
+
+    <!-- 외부스타일시트 -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- 제이쿼리 CDN -->
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+
+    <script src="js.js"></script>
+
+    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+    
+</head>
+<body>
+    <div class="nav">
+      <aside class="sidebar">
+        <div class="login">
+          <a href="#"><img src="img/people.png" alt=""><span>로그인</span></a>
+        </div>
+      
+        <nav>
+          <ul>
+            <li class="has-sub">
+              <a href="#"><span>대세소개</span></a>
+              <ul class="submenu">
+                <li><a href="index1.html">인사말</a></li>
+                <li><a href="index2.html">연혁</a></li>
+                <li><a href="index3.html">소식</a></li>
+                <li><a href="index4.html">오시는길</a></li>
+              </ul>
+            </li>
+            <li class="has-sub">
+              <a href="#"><span>전문가소개</span></a>
+              <ul class="submenu">
+                <li><a href="#">전문가소개</a></li>
+                <li><a href="#">변호사 인터뷰</a></li>
+              </ul>
+            </li>
+            <li><a href="#"><span>업무분야</span></a></li>
+            <li><a href="#"><span>성공사례</span></a></li>
+            <li><a href="#"><span>고객후기</span></a></li>
+            <li><a href="#"><span>상담신청</span></a></li>
+          </ul>
+        </nav>
+      
+        <div class="consult-info">
+          <p class="tel-info">24시 전화상담<br><strong>1660-3868</strong></p>
+      
+          <form class="consult-form">
+            <select>
+              <option>[필수] 상담분야</option>
+              <option>형사·성범죄</option>
+              <option>이혼·상간자</option>
+              <option>행정·소청</option>
+              <option>회생·파산</option>
+            </select>
+            <input type="text" name="name" placeholder="이름" required />
+            <input type="tel" name="phone" pattern="[0-9]{10,11}" placeholder="전화번호" required />
+            <label><input type="checkbox" /> 개인정보 수집 및 이용약관 동의</label>
+            <button type="submit">상담신청</button>
+          </form>
+        </div>
+      
+        <div class="consult-icons">
+          <a href="#"><img src="img/visit.png" alt="방문상담" /></a>
+          <a href="#"><img src="img/chatting.png" alt="채팅상담" /></a>
+          <a href="#"><img src="img/call.png" alt="전화상담" /></a>
+        </div>
+      
+        <a href="#" class="blog-btn">공식블로그 바로가기</a>
+        <a href="#" class="legal-btn">면책공고</a>
+      </aside>
+    </div>
+    <div class="wrap">
+
+        <!-- 메인작성 -->
+        <section class="content1">
+            <div class="logo">
+                <a href="index.html"><img src="img/logo.png" alt=""></a>
+            </div>
+            <div class="main">
+                <div class="main_txt">
+                    <h1>당신의 고민,<br>대세가 해결하겠습니다.</h1>
+                    <div class="search-box">
+                        <input type="text" class="search" placeholder="검색어를 입력하세요" />
+                        <i class="fas fa-search search-icon"></i>
+                      </div>        
+                </div>
+                <div class="main_vi">
+                    <div class="box_video">
+                        <video autoplay muted loop playsinline>
+                            <source src="img/main_video2.webm" type="video/webm">
+
+                        </video>
+                      </div>
+                    <div class="box_shadow"></div>        
+                </div>
+            </div>
+        </section>
+
+            <!-- 업무분야 -->
+            <section class="content2">
+              <div class="txt">
+                <div class="content2_txt1">
+                    <h2>업무분야</h2>
+                    <p class="desc">형사·성범죄 이혼·상간자 행정·소청 법인회생 등 다양한 분야의 성공사례를 확인해 보세요.</p>
+                </div>
+                <div class="content2_txt2">
+                    <ul class="cards">
+                        <li class="card red">
+                          <a href="">
+                              <img src="img/flavour_1.png" alt="형사·성범죄">
+                              <span>형사·성범죄</span>
+                          </a>
+                        </li>
+                        <li class="card pink">
+                          <a href="">
+                              <img src="img/flavour_2.png" alt="이혼·상간자">
+                              <span>이혼·상간자</span>
+                          </a>
+                        </li>
+                        <li class="card green">
+                          <a href="">
+                              <img src="img/flavour_3.png" alt="행정·소청">
+                              <span>행정·소청</span>
+                          </a>
+                        </li>
+                        <li class="card blue">
+                          <a href="">
+                              <img src="img/flavour_4.png" alt="법인·회생">
+                              <span>법인·회생</span>
+                          </a>
+                        </li>
+                      </ul>
+                </div>
+                <div class="content2_txt3">
+                    <ul class="slider-track">
+                        <li><img src="img/case1.png" alt=""></li>
+                        <li><img src="img/case1.png" alt=""></li>
+                        <li><img src="img/case1.png" alt=""></li>
+                        <li><img src="img/case1.png" alt=""></li>
+                        <li><img src="img/case1.png" alt=""></li>
+                        <li><img src="img/case1.png" alt=""></li>
+                        <li><img src="img/case1.png" alt=""></li>
+                        <li><img src="img/case1.png" alt=""></li>
+                        <li><img src="img/case1.png" alt=""></li>
+                        <li><img src="img/case1.png" alt=""></li>
+                        <li><img src="img/case1.png" alt=""></li>
+                        <li><img src="img/case1.png" alt=""></li>
+                      </ul>
+                </div>
+            </div>
+            </section>
+            
+            <!-- 변호사 소개 -->
+            <section class="content3">
+                <div class="txt">
+                    <div class="content3_txt1">
+                        <h2>변호사 소개</h2>
+                        <p class="subtext">각 분야의 전문가들이 당신의 사건을 해결합니다.</p>
+                    </div>
+                    <div class="txt_img">
+
+                        <!-- 자세한 변호사 프로필 -->
+                        <div class="lawyer_profiles">
+
+                          <!-- 배철욱 변호사님  -->
+                        <div class="content3_txt2">
+                                <div class="info_img">
+                                  <img src="img/lawyer_main.png" alt="배철욱 변호사">
+                                </div>
+                                <div class="info">
+                                  <h3>배철욱 <span>대표변호사</span></h3>
+                                  <p class="special">형사·이혼 전문</p>
+                                  <img src="img/Line_1.png" alt="" class="line1">
+                                  <p class="desc"><span>냉철하면서도 수임을 위한 과장이나<br>거짓말을 하지 않는 것</span>이 좋은 서비스를 제공하는<br>가장 중요한 포인트인 것 같습니다.</p>
+                                  <button class="btn-detail"><a href="">자세히 보기</a></button>
+                                </div>
+                        </div>
+
+                        <!-- 박천사 변호사님 -->
+
+                        <!-- 서석우 변호사님 -->
+
+                        <!-- 이소연 변호사님 -->
+
+                        <!-- 김광수 변호사님 -->
+
+                        <!-- 방효정 변호사님 -->
+
+                        <!-- 신동현 변호사님 -->
+
+
+
+                      </div>
+
+                        <!-- 변호사 목록 설정 -->
+
+                        <div class="content3_txt3">
+                                <div class="list_left">
+                                    <ul>
+                                        <li data-index="0"><img src="img/lawyer_1_1.png" alt=""><img src="img/lawyer_1_2.png" alt="" class="list2"></li>
+                                        <li data-index="1"><img src="img/lawyer_2_1.png" alt=""><img src="img/lawyer_2_2.png" alt="" class="list2"></li>
+                                        <li data-index="2"><img src="img/lawyer_3_1.png" alt=""><img src="img/lawyer_3_2.png" alt="" class="list2"></li>
+                                        <li data-index="3"><img src="img/lawyer_4_1.png" alt=""><img src="img/lawyer_4_2.png" alt="" class="list2"></li>
+                                    </ul>
+                                </div>
+                                <div class="list_right">
+                                    <ul>
+                                        <li data-index="4"><img src="img/lawyer_5_1.png" alt=""><img src="img/lawyer_5_2.png" alt="" class="list2"></li>
+                                        <li data-index="5"><img src="img/lawyer_6_1.png" alt=""><img src="img/lawyer_6_2.png" alt="" class="list2"></li>
+                                        <li data-index="6"><img src="img/lawyer_7_1.png" alt=""><img src="img/lawyer_7_2.png" alt="" class="list2"></li>
+                                    </ul>
+                                </div>
+                          </div>
+        
+                        </div>
+                    </div>
+                
+            </section>
+        
+        <section class="review">
+          <div class="review-inner">
+            <div class="review_bg">
+              <img src="img/re_bg.png" alt="">
+            </div>
+            <!-- 타이틀 -->
+            <div class="review-title">
+              <h2>고객후기</h2>
+              <p>대세는 의뢰인의 마음을 변호합니다. 수 많은 후기가 이를 증명하고 있습니다.</p>
+            </div>
+        
+            <div class="review_big">
+              <!-- 본문 박스 -->
+              <div class="review-box">
+                <!-- 좌측 작은 후기 카드들 -->
+                <ul class="review-list">
+                  <li class="review-card">
+                    <div class="profile"><img src="img/people.png" alt=""></div>
+                    <div class="text">
+                      <strong>ㅇㄷㄹㅇㄷㄹㅇㄷㄹ</strong>
+                      <span>2025.03.07</span>
+                      <hr>
+                      <p>본인일처럼 고민하고 걱정해주셔서<br>조금 더 진솔하게 이야기 할 수 있었습니다.</p>
+                    </div>
+                  </li>
+                  <li class="review-card">
+                    <div class="profile"><img src="img/people.png" alt=""></div>
+                    <div class="text">
+                      <strong>ㅇㄷㄹㅇㄷㄹㅇㄷㄹ</strong>
+                      <span>2025.03.07</span>
+                      <hr>
+                      <p>본인일처럼 고민하고 걱정해주셔서<br>조금 더 진솔하게 이야기 할 수 있었습니다.</p>
+                    </div>
+                  </li>
+                  <li class="review-card">
+                    <div class="profile"><img src="img/people.png" alt=""></div>
+                    <div class="text">
+                      <strong>ㅇㄷㄹㅇㄷㄹㅇㄷㄹ</strong>
+                      <span>2025.03.07</span>
+                      <hr>
+                      <p>본인일처럼 고민하고 걱정해주셔서<br>조금 더 진솔하게 이야기 할 수 있었습니다.</p>
+                    </div>
+                  </li>
+                  <li class="review-card">
+                    <div class="profile"><img src="img/people.png" alt=""></div>
+                    <div class="text">
+                      <strong>ㅇㄷㄹㅇㄷㄹㅇㄷㄹ</strong>
+                      <span>2025.03.07</span>
+                      <hr>
+                      <p>본인일처럼 고민하고 걱정해주셔서<br>조금 더 진솔하게 이야기 할 수 있었습니다.</p>
+                    </div>
+                  </li>
+                </ul>
+          
+                <!-- 우측 Best 후기 -->
+                <div class="review-best">
+                  <div class="best-header">
+                    <div class="profile"><img src="img/people.png" alt=""></div>
+                    <div class="text">
+                      <strong>ㅇㄷㄹㅇㄷㄹㅇㄷㄹ</strong>
+                      <span>2025.03.07</span>
+                    </div>
+                  </div>
+                  <hr>
+                  <p>
+                    본인일처럼 고민하고 걱정해주셔서 조금<br>
+                    더 진솔하게 이야기 할 수 있었습니다.<br>
+                    전화로 상담예약신청을 하게 되었는데<br>
+                    예약금이 선불이 아니고 전화상으로<br>
+                    변호사님께서 먼저 자세히 어떻게 진행이<br>
+                    될건지 친절하게 설명해 주신 부분이 
+                    너무 좋았어요.<br>
+                    대면상담은 모든 경우의 수를 알려 주시고<br>
+                    현실적인 조언을 해주셔서
+                    그 부분도 <br>신뢰가 많이 갔습니다.
+                  </p>
+                  <div class="badge">Best</div>
+                </div>
+              </div>
+
+              <!-- 하단 버튼 -->
+              <div class="review-more">
+                <button class="arrow left">&lt;</button>
+                <button class="arrow right">&gt;</button>
+                <a href="#">+ 더 많은 후기 보기</a>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        
+        <!-- News -->
+        <section class="media">
+            <div class="media_bg"></div>
+            <div class="media_content"> 
+              <div class="media_left_cont">
+                <h2>언론보도</h2>
+                <ul>
+                  <li><a href=""><img src="img/media_bt.png" alt="" class="media_bt"></a></li>
+                  <li><img src="img/logo_bg.png" alt="" class="logo_bg"></li>
+                </ul>
+              </div>
+              <div class="media_right_cont">
+                <div class="media_left">
+                  <ul class="me_list">
+                    <li class="list_1">
+                      <ul>
+                        <li><img src="img/media_img.png" alt=""></li>
+                        <li>법무법인 대세, '공무원 성실의무 위반'
+                          중징계 취소 ..</li>
+                        <li><data value="2025-01-24">2025-01-24</data></li>
+                      </ul>
+                    </li>
+                    <li class="list_2">
+                      <ul>
+                        <li><img src="img/media_img.png" alt=""></li>
+                        <li>법무법인 대세, '공무원 성실의무 위반'
+                          중징계 취소 ..</li>
+                        <li><data value="2025-01-24">2025-01-24</data></li>
+                      </ul>
+                    </li>
+                    <li class="list_3">
+                      <ul>
+                        <li><img src="img/media_img.png" alt=""></li>
+                        <li>법무법인 대세, '공무원 성실의무 위반'
+                          중징계 취소 ..</li>
+                        <li><data value="2025-01-24">2025-01-24</data></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <ul class="list_4">
+                        <li><img src="img/media_img.png" alt=""></li>
+                        <li>법무법인 대세, '공무원 성실의무 위반'
+                          중징계 취소 ..</li>
+                        <li><data value="2025-01-24">2025-01-24</data></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+                <div class="media_right">
+                  <ul class="me_list">
+                    <li class="list_1">
+                      <ul>
+                        <li><img src="img/media_img.png" alt=""></li>
+                        <li>법무법인 대세, '공무원 성실의무 위반'
+                          중징계 취소 ..</li>
+                        <li><data value="2025-01-24">2025-01-24</data></li>
+                      </ul>
+                    </li>
+                    <li class="list_2">
+                      <ul>
+                        <li><img src="img/media_img.png" alt=""></li>
+                        <li>법무법인 대세, '공무원 성실의무 위반'
+                          중징계 취소 ..</li>
+                        <li><data value="2025-01-24">2025-01-24</data></li>
+                      </ul>
+                    </li>
+                    <li class="list_3">
+                      <ul>
+                        <li><img src="img/media_img.png" alt=""></li>
+                        <li>법무법인 대세, '공무원 성실의무 위반'
+                          중징계 취소 ..</li>
+                        <li><data value="2025-01-24">2025-01-24</data></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <ul class="list_4">
+                        <li><img src="img/media_img.png" alt=""></li>
+                        <li>법무법인 대세, '공무원 성실의무 위반'
+                          중징계 취소 ..</li>
+                        <li><data value="2025-01-24">2025-01-24</data></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              </div>
+        </section>
+        
+        <!-- Contact -->
+        <section class="map">
+          <div class="map_bg"></div>
+          <div class="map_content">
+            <div class="map_left">
+              <h2>오시는길</h2>
+              <p class="desc">방문이 어려운 분들을 위해 비대면 상담도 진행하고 있습니다.</p>
+              <div class="map_go">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3213.305991183808!2d127.38445197625414!3d36.35336649275943!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x356549e7ca1a6af3%3A0x5781149cb0257dc0!2z67KV66y067KV7J24IOuMgOyEuCDrjIDsoITsgqzrrLTshow!5e0!3m2!1sko!2skr!4v1743410061699!5m2!1sko!2skr" 
+                    width="400" 
+                    height="300" 
+                    style="border:0; border-radius: 8px;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                  </iframe>
+              </div>
+            </div>
+            <div class="map_right">
+              <ul class="map_tap">
+                <li>서울</li>
+                <li class="active">대전</li>
+                <li>인천</li>
+              </ul>
+        
+              <ul class="map_info">
+                <li class="info_row">
+                  <strong class="label">오시는길</strong>
+                  <span class="bar"></span>
+                  <p class="text">대전 서구 둔산중로 74 인곡타워 4층</p>
+                </li>
+                <li class="info_row">
+                  <strong class="label">운영시간</strong>
+                  <span class="bar"></span>
+                  <p class="text">평일 09:00 ~ 18:00</p>
+                </li>
+                <li class="info_row">
+                  <strong class="label">전화상담</strong>
+                  <span class="bar"></span>
+                  <p class="text">
+                    <span class="tel">1660-3868</span>
+                    <span class="red">24시간 전화상담 가능</span>
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer_tx">
+              <img src="img/footer_logo.png" alt="" class="footer_logo">
+              <ul>
+                <li><span>법무법인</span> 대세대표자 : 배철욱 / 광고책임변호사 : 박천사 / 사업자등록번호 : 803-87-01559
+                </li>
+                <li><span>서울지사</span> 서초구 서초중앙로 156, 블루원빌딩 415호 | 1660-3868
+                </li>
+                <li><span>대전지사</span> 서구 둔산중로 74 인곡타워 4층 | 1660-3868
+                </li>
+                <li><span>인천지사</span> 미추홀구 경원대로 890,102호 | 1800-5010</li>
+              </ul>
+              <p>&copy; 2025 법무법인 대세. 모든 권리 보유.</p>
+            </div>
+        </footer>
+      </div>
+    </div>
+</body>
+</html>
